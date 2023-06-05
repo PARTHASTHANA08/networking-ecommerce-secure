@@ -1,4 +1,6 @@
 #to avoid SQL injection vulnerability we should use SQLALchemy
+#there can be an idor attack just by manupilating the url to fetch data
+#to avoid IDOR attacks the sessions should be ended when the browser is closed or the user has logged out
 from flask import Blueprint, render_template, session, redirect, url_for, request, jsonify
 from app.models.products import Products
 from app.models.address import Address
