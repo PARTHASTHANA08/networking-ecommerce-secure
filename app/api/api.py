@@ -1,3 +1,4 @@
+# to avoid phising attacks we should gie an if statement to allow only cerain type of file to be uploaded on the page.
 from flask import Blueprint, jsonify, request, session, redirect, url_for, send_file
 from app.models.users import Users
 from app.models.address import Address
